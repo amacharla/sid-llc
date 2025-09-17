@@ -409,16 +409,17 @@ export default function App() {
       {/* Team */}
       <section id="team" className="py-20 bg-gradient-to-br from-blue-50 to-orange-50">
         <div className="max-w-6xl mx-auto px-6">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl lg:text-5xl font-bold text-blue-900 mb-6">Meet Our Family</h2>
-            <p className="text-xl text-blue-700">The experienced leadership team behind Sid Developers</p>
-          </div>
+                      <div className="text-center mb-16">
+              <h2 className="text-4xl lg:text-5xl font-bold text-blue-900 mb-6">Meet Our Team</h2>
+              <p className="text-xl text-blue-700">The experienced professionals bringing the Del Valle project to life</p>
+            </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {[
-              { name: "Veera M", role: "Lead Developer", image: "/pictures/veera_profilepic.jpg" },
-              { name: "Anoop M", role: "Development Partner", image: "/pictures/anoop_profilePic.jpeg" },
-              { name: "Alok M", role: "Development Partner", image: "/pictures/alok_profilepic.png" }
+              { name: "Veera M", role: "Lead Developer", company: "Sid Developers", image: "/pictures/veera_profilepic.jpg" },
+              { name: "Anoop M", role: "Development Partner", company: "Sid Developers", image: "/pictures/anoop_profilePic.jpeg" },
+              { name: "Alok M", role: "Development Partner", company: "Sid Developers", image: "/pictures/alok_profilepic.png" },
+              { name: "Daniel M", role: "General Contractor", company: "DM Reality Advisors", image: "/pictures/daniel_profilepic.jpeg" }
             ].map((member, index) => (
               <div key={index} className="text-center group">
                 <div className="relative mb-8">
@@ -431,7 +432,7 @@ export default function App() {
                 </div>
                 <h4 className="text-2xl font-bold text-blue-900 mb-2">{member.name}</h4>
                 <p className="text-orange-600 font-semibold text-lg">{member.role}</p>
-                <p className="text-blue-600 mt-2">Sid Developers</p>
+                <p className="text-blue-600 mt-2">{member.company}</p>
               </div>
             ))}
           </div>
