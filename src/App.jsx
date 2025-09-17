@@ -117,12 +117,12 @@ export default function App() {
                     Minutes from Circuit of the Americas, Austin's premier racing venue
                   </p>
                 </div>
-                <div className="bg-blue-800 rounded-lg p-6">
-                  <h4 className="font-bold text-orange-400 mb-2">Airport Access</h4>
-                  <p className="text-blue-100 text-sm">
-                    Convenient access to Austin-Bergstrom International Airport
-                  </p>
-                </div>
+                                  <div className="bg-blue-800 rounded-lg p-6">
+                    <h4 className="font-bold text-orange-400 mb-2">EV-Ready Location</h4>
+                    <p className="text-blue-100 text-sm">
+                      Tesla Supercharger parking and convenient airport access
+                    </p>
+                  </div>
               </div>
             </div>
             
@@ -168,10 +168,10 @@ export default function App() {
                 timeline: "Completion: April 2026",
                 color: "orange",
                 features: [
-                  "4 Giant Theater Screens", 
-                  "Bleacher Seating on All Walls", 
-                  "Rooftop Terrace", 
-                  "Austin Skyline Views"
+                  "4 Floor-to-Ceiling Theater Screens", 
+                  "Luxurious Bleacher-Style Sofa Seating", 
+                  "Ghost Kitchen with Rotating Menu", 
+                  "Rooftop Bar & Restaurant"
                 ]
               },
               {
@@ -191,16 +191,16 @@ export default function App() {
               {
                 phase: "Phase 3",
                 title: "Multi-Floor Parking",
-                description: "State-of-the-art parking facility serving the entire development",
+                description: "State-of-the-art parking facility with Tesla Supercharger stations serving the entire development",
                 icon: ParkingCircle,
                 timeline: "Final Phase",
                 color: "green",
-                features: [
-                  "Multi-Story Structure", 
-                  "Covered Parking Spaces", 
-                  "EV Charging Stations", 
-                  "Smart Parking Technology"
-                ]
+                                 features: [
+                   "Multi-Story Structure", 
+                   "Covered Parking Spaces", 
+                   "Tesla Supercharger Stations", 
+                   "Smart Parking Technology"
+                 ]
               }
             ].map((phase, index) => (
               <div key={index} className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 group border border-gray-100">
@@ -247,28 +247,64 @@ export default function App() {
                 <h2 className="text-4xl lg:text-5xl font-bold text-blue-900 mt-4 mb-6">
                   The Cube Sports Theater
                 </h2>
-                <p className="text-lg text-blue-700 leading-relaxed">
-                  An unprecedented sports entertainment destination featuring four massive theater screens 
-                  with stadium-style bleacher seating on every wall, creating a complete 360-degree 
-                  immersive viewing experience unlike anywhere else in Texas.
+                <p className="text-lg text-blue-700 leading-relaxed mb-6">
+                  An unprecedented sports entertainment destination featuring four massive floor-to-ceiling 
+                  theater screens with luxurious bleacher-style sofa seating facing every wall. This creates 
+                  a complete 360-degree immersive viewing experience unlike anywhere else in Texas.
                 </p>
+                <div className="bg-white rounded-xl p-6 mb-6 shadow-md border-l-4 border-orange-500">
+                  <h4 className="font-bold text-blue-900 mb-3 text-lg">🍽️ Culinary Experience</h4>
+                  <p className="text-blue-700 leading-relaxed">
+                    Featuring an innovative ghost kitchen with a rotating menu that changes regularly, 
+                    ensuring fresh and exciting dining options for every visit. From game day classics 
+                    to international cuisine, there's always something new to discover.
+                  </p>
+                </div>
+                <div className="bg-white rounded-xl p-6 shadow-md border-l-4 border-blue-500">
+                  <h4 className="font-bold text-blue-900 mb-3 text-lg">🌃 Rooftop Experience</h4>
+                  <p className="text-blue-700 leading-relaxed">
+                    Crown your visit with our rooftop bar and restaurant offering panoramic views of 
+                    the Austin skyline. Perfect for pre-game dining, halftime breaks, or post-game 
+                    celebrations under the Texas stars.
+                  </p>
+                </div>
               </div>
 
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div className="bg-white rounded-xl p-6 shadow-md">
-                  <div className="w-14 h-14 bg-orange-100 rounded-xl flex items-center justify-center mb-4">
-                    <Play className="w-8 h-8 text-orange-600" />
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+                <div className="bg-white rounded-xl p-5 shadow-md">
+                  <div className="w-12 h-12 bg-orange-100 rounded-xl flex items-center justify-center mb-3">
+                    <Play className="w-6 h-6 text-orange-600" />
                   </div>
-                  <h4 className="font-bold text-blue-900 mb-2">360° Experience</h4>
-                  <p className="text-blue-600 text-sm">Complete immersion with bleacher seating facing all four walls</p>
+                  <h4 className="font-bold text-blue-900 mb-2 text-sm">Floor-to-Ceiling Screens</h4>
+                  <p className="text-blue-600 text-xs">4 massive theater displays creating total immersion</p>
                 </div>
                 
-                <div className="bg-white rounded-xl p-6 shadow-md">
-                  <div className="w-14 h-14 bg-blue-100 rounded-xl flex items-center justify-center mb-4">
-                    <Building className="w-8 h-8 text-blue-600" />
+                <div className="bg-white rounded-xl p-5 shadow-md">
+                  <div className="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mb-3">
+                    <svg className="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 4V2a1 1 0 011-1h8a1 1 0 011 1v2h4a1 1 0 011 1v1a1 1 0 01-1 1v10a2 2 0 01-2 2H5a2 2 0 01-2-2V7a1 1 0 01-1-1V5a1 1 0 011-1h4z" />
+                    </svg>
                   </div>
-                  <h4 className="font-bold text-blue-900 mb-2">Rooftop Terrace</h4>
-                  <p className="text-blue-600 text-sm">Stunning panoramic views of the Austin skyline</p>
+                  <h4 className="font-bold text-blue-900 mb-2 text-sm">Bleacher Sofas</h4>
+                  <p className="text-blue-600 text-xs">Luxurious sofa seating in stadium-style bleachers</p>
+                </div>
+
+                <div className="bg-white rounded-xl p-5 shadow-md">
+                  <div className="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center mb-3">
+                    <svg className="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 100 4m0-4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 100 4m0-4v2m0-6V4" />
+                    </svg>
+                  </div>
+                  <h4 className="font-bold text-blue-900 mb-2 text-sm">Ghost Kitchen</h4>
+                  <p className="text-blue-600 text-xs">Rotating menu with fresh culinary experiences</p>
+                </div>
+                
+                <div className="bg-white rounded-xl p-5 shadow-md">
+                  <div className="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center mb-3">
+                    <Building className="w-6 h-6 text-purple-600" />
+                  </div>
+                  <h4 className="font-bold text-blue-900 mb-2 text-sm">Rooftop Bar</h4>
+                  <p className="text-blue-600 text-xs">Restaurant & bar with Austin skyline views</p>
                 </div>
               </div>
 
@@ -317,14 +353,14 @@ export default function App() {
             
             {[
               { 
-                date: "November 2024", 
+                date: "November 2025", 
                 title: "Project Launch", 
                 description: "Official project announcement and final planning phase begins", 
                 side: "left",
                 color: "orange" 
               },
               { 
-                date: "January 2025", 
+                date: "January 2026", 
                 title: "Groundbreaking Ceremony", 
                 description: "Construction officially begins on Phase 1 - The Cube Sports Theater", 
                 side: "right",
@@ -338,9 +374,9 @@ export default function App() {
                 color: "green" 
               },
               { 
-                date: "Future Phases", 
+                date: "April 2027", 
                 title: "Hotel & Parking Development", 
-                description: "Phases 2 & 3 development timeline to be announced following Phase 1 success", 
+                description: "Phases 2 & 3 construction begins following successful Phase 1 completion", 
                 side: "right",
                 color: "purple" 
               }
@@ -507,10 +543,10 @@ export default function App() {
                   <Hotel className="w-4 h-4 text-blue-400" />
                   <span>Phase 2: Hotel & Retail</span>
                 </li>
-                <li className="flex items-center space-x-2">
-                  <Car className="w-4 h-4 text-green-400" />
-                  <span>Phase 3: Multi-Floor Parking</span>
-                </li>
+                                 <li className="flex items-center space-x-2">
+                   <Car className="w-4 h-4 text-green-400" />
+                   <span>Phase 3: Multi-Floor Parking with Superchargers</span>
+                 </li>
               </ul>
             </div>
             
