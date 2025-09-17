@@ -94,7 +94,7 @@ export default function App() {
               <div className="relative bg-gradient-to-br from-slate-800 to-slate-900 rounded-2xl p-8 shadow-2xl">
                 <div className="absolute inset-0 bg-gradient-to-r from-amber-600/20 to-transparent rounded-2xl"></div>
                 <img 
-                  src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68c714359cc24488674a5ee0/df8d79e23_Sportstheater.jpg"
+                  src="/pictures/Sportstheater.jpeg"
                   alt="Modern Commercial Development"
                   className="w-full h-64 object-cover rounded-lg opacity-90"
                 />
@@ -228,7 +228,7 @@ export default function App() {
 
             <div className="relative">
               <img 
-                src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68c714359cc24488674a5ee0/df8d79e23_Sportstheater.jpg"
+                src="/pictures/Sportstheater.jpeg"
                 alt="Modern Sports Entertainment Venue"
                 className="w-full h-96 object-cover rounded-2xl shadow-2xl"
               />
@@ -286,9 +286,9 @@ export default function App() {
 
           <div className="grid md:grid-cols-3 gap-8">
             {[
-              { name: "Veera M", role: "Lead Developer", image: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68c714359cc24488674a5ee0/01d4a27d1_DelValleDevelopmentTraining-2025-09-15202222.jpg" },
-              { name: "Anoop M", role: "Development Partner", image: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68c714359cc24488674a5ee0/40203b013_me-profilePic.jpeg" },
-              { name: "Alok M", role: "Development Partner", image: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68c714359cc24488674a5ee0/89f6c5801_Screenshot2025-09-15at32647PM.png" }
+              { name: "Veera M", role: "Lead Developer", image: "/pictures/veera_profilepic.jpg" },
+              { name: "Anoop M", role: "Development Partner", image: "/pictures/anoop_profilePic.jpeg" },
+              { name: "Alok M", role: "Development Partner", image: "/pictures/alok_profilepic.png" }
             ].map((member, index) => (
               <div key={index} className="text-center group">
                 <div className="relative mb-6">
