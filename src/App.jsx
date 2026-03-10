@@ -414,12 +414,11 @@ export default function App() {
               <p className="text-xl text-blue-700">The experienced professionals bringing the Del Valle project to life</p>
             </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
               { name: "Veera M", role: "Lead Developer", company: "Sid Developers", image: "/pictures/veera_profilepic.jpg" },
-              { name: "Anoop M", role: "Development Partner", company: "Sid Developers", image: "/pictures/anoop_profilePic.jpeg" },
-              { name: "Alok M", role: "Development Partner", company: "Sid Developers", image: "/pictures/alok_profilepic.png" },
-              { name: "Daniel M", role: "General Contractor", company: "DM Reality Advisors", image: "/pictures/daniel_profilepic.jpeg" }
+              { name: "Anoop M", role: "Operations Lead", company: "Sid Developers", image: "/pictures/anoop_profilePic.jpeg" },
+              { name: "Alok M", role: "Construction Lead", company: "Sid Developers", image: "/pictures/alok_profilepic.png" }
             ].map((member, index) => (
               <div key={index} className="text-center group">
                 <div className="relative mb-8">
